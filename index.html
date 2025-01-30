@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Club</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    .fonts-big {
+        font-family: "ADLaM Display", serif;
+    }
+
+    .fonts-sora {
+        font-family: "Sora", serif;
+    }
+</style>
+
+<body class="bg-white text-black ">
+    <header>
+        <nav>
+            <div class="navbar bg-[#FFF9F4]">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Find a pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center ">
+                        <img class="w-10 mr-2" src="assets/logo-header.png" alt="">
+                        <h4 class="text-lg text-black font-medium">Browse <span class="text-[#FFDC26]">4</span> Pets
+                        </h4>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-black">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a href=""><i class="fa-regular mr-3 font-bold text-black fa-bell"></i> </a>
+                    <a href=""><i class="fa-solid mr-2 text-black fa-magnifying-glass"></i> </a>
+                    <button class="px-4 mr-3 py-1 border-2 border-[#FFDC26] text-black rounded-md">Login</button>
+                    <button class="px-4 py-1 bg-[#FFDC26] text-black rounded-md">Register</button>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <section class=" bg-[url('./assets/cat-big.png')]  bg-center bg-cover py-2 w-[1320px] h-[700px] ">
+            <!-- hero description -->
+            <div class="lg:mt-10 space-y-4 lg:ml-20">
+                <h1 class="text-5xl fonts-big ">Pamper Your Pet,
+                    <br>Because They Deserve
+                    <br>the Bes
+                </h1>
+                <p class="fonts-sora text-[#111111] ">Discover a world of treats, toys, and essentials
+                    handpicked for
+                    <br>your
+                    furry
+                    friends. Shop now and make
+                    tails wag with joy!
+                </p>
+                <button
+                    class="px-4 py-1  bg-[#FFDC26] text-black hover:bg-black hover:text-white font-medium rounded-md">Find
+                    a
+                    pet</button>
+
+            </div>
+            <!-- hero banner -->
+            <!-- <div class=" absolute bottom-10">
+                <img src="assets/cat-big.png" alt="Cute cat" class="w-full ">
+            </div> -->
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
