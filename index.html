@@ -29,43 +29,54 @@
 
 <body class="bg-white text-black ">
     <header>
+
         <nav>
             <div class="navbar bg-[#FFF9F4]">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0" class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Find a pet</a></li>
-                            <li><a>Breeds</a></li>
-                            <li><a>Contact us</a></li>
-                        </ul>
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    <div class="flex items-center ">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="hidden lg:flex flex-1">
+                    <div class="flex items-center">
                         <img class="w-10 mr-2" src="assets/logo-header.png" alt="">
-                        <h4 class="hidden md:block text-lg text-black font-medium">Browse <span
-                                class="text-[#FFDC26]">4</span> Pets
+                        <h4 class="text-lg text-black font-medium">Browse <span class="text-[#FFDC26]">4</span> Pets
                         </h4>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+
+                <div class="hidden lg:flex flex-none">
                     <ul class="menu menu-horizontal px-1 text-black">
                         <li><a>Find a pet</a></li>
                         <li><a>Breeds</a></li>
                         <li><a>Contact us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end ">
-                    <a href=""><i class="hidden md:block fa-regular mr-3 font-bold text-black fa-bell"></i> </a>
-                    <a href=""><i class=" hidden md:block fa-solid mr-2 text-black fa-magnifying-glass"></i> </a>
-                    <button
-                        class="hidden md:block px-4 mr-3 py-1 border-2 border-[#FFDC26] text-black rounded-md">Login</button>
-                    <button class="hidden md:block px-4 py-1 bg-[#FFDC26] text-black rounded-md">Register</button>
+
+                <div class="flex flex-1 justify-end">
+                    <div class="flex items-center lg:hidden">
+                        <img class="w-10 mr-2" src="assets/logo-header.png" alt="">
+                        <h4 class="hidden md:block text-lg text-black font-medium">Browse <span
+                                class="text-[#FFDC26]">4</span> Pets</h4>
+                    </div>
+
+                    <div class="hidden lg:flex items-center">
+                        <a href=""><i class="fa-regular mr-3 font-bold text-black fa-bell"></i></a>
+                        <a href=""><i class="fa-solid mr-2 text-black fa-magnifying-glass"></i></a>
+                        <button class="px-4 mr-3 py-1 border-2 border-[#FFDC26] text-black rounded-md">Login</button>
+                        <button class="px-4 py-1 bg-[#FFDC26] text-black rounded-md">Register</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -257,17 +268,16 @@
 
                 </div>
             </div>
-
-
         </section>
         <!-- low price section -->
-        <section class="mt-10 mx-4 lg:mx-10 lg:mt-20">
+        <section class="mt-10 mx-4 lg:mx-10 lg:mt-20  lg:pb-48">
             <h4 class="text-2xl lg:text-3xl fonts-big">Everyday low Price</h4>
             <!-- gradient card container -->
-            <div class="mt-10 flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-x-10">
+            <div
+                class="mt-10 mb-[400px] lg:mb-2 flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-x-10">
                 <!-- First Card -->
                 <div
-                    class="bg-gradient-to-tr from-[#a0c9f8] via-[#edc0f0] w-[360px] h-[270px] lg:w-[650px] lg:h-[380px] rounded-lg flex justify-center items-center relative">
+                    class="bg-gradient-to-tr from-[#a0c9f8] via-[#edc0f0] w-[360px] h-[270px] lg:w-[650px] lg:h-[380px] rounded-lg flex justify-center items-center lg:mt-8 relative">
                     <div class="pl-4 ">
                         <p class="font-semibold hidden md:block">Under Price</p>
                         <h3 class="text-xl lg:text-2xl fonts-big">Pet Grooming Mitt</h3>
@@ -293,9 +303,54 @@
 
             </div>
         </section>
+        <!-- input section -->
+        <section class="mx-4 lg:mx-10 mt-10 lg:mt-20 relative">
+            <!-- input container -->
+            <div
+                class="bg-[#FFF9F4] w-[345px] h-[540px] lg:w-[980px] lg:h-[380px] flex flex-col lg:flex-row justify-center items-center rounded-xl absolute left-2 -top-52 lg:-top-48 lg:left-32">
+                <div>
+                    <img src="assets/cute-pet-small.png" alt="">
+                </div>
+                <!-- input description -->
+                <div class="text-center lg:text-left space-y-4 pl-4 pb-2">
+                    <h4 class="text-xl lg:text-3xl fonts-big">Get Pawsome News!</h4>
+                    <p class="fonts-sora">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="text" placeholder="Enter email...."
+                        class="input input-bordered bg-white border-none w-full max-w-sm" />
+                    <button class="px-4 py-1 bg-[#FFDC26] text-black rounded-md fonts-big">Subscribe</button>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="bg-[#FFDC2680] py-2 lg:py-2 px-6   lg:mt-10 ">
+        <div class="lg: pt-20 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 mt-72  lg:mt-52 lg:ml-10 relative">
+            <div class="">
+                <div class="flex items-center">
+                    <img src="assets/logo-footer.png" alt="">
+                    <h3 class="text-2xl font-semibold fonts-sora">Browse Pets</h3>
+                </div>
+                <p class="fonts-sora mt-2">Discover a world of treats, toys, and essentials handpicked for your furry
+                    friends.</p>
+            </div>
+            <div class="lg:pl-20 pt-5 lg:pt-3">
+                <ul class="space-y-2">
+                    <li><a href="#" class=" hover:underline fonts-sora">Find a pet</a></li>
+                    <li><a href="#" class=" hover:underline fonts-sora">Breeds</a></li>
+                    <li><a href="#" class=" hover:underline fonts-sora">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col space-x-4 py-20">
+                <div>
+                    <p class="fonts-sora ml-4">Follow Us</p>
+                </div>
+                <div class="space-x-2 py-1">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
