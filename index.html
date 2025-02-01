@@ -25,6 +25,20 @@
     .fonts-sora {
         font-family: "Sora", serif;
     }
+
+    @keyframes zoom {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.1);
+        }
+    }
+
+    .animate-zoom {
+        animation: zoom 5s ease-in-out infinite alternate;
+    }
 </style>
 
 <body class="bg-white text-black ">
@@ -87,7 +101,8 @@
             </div>
         </nav>
         <!-- hero section -->
-        <section class="">
+        <section
+            class="lg:bg-[url('./assets/cat-big.png')]  w-[380px] h-[230px] lg:w-[1320px] lg:h-[600px] bg-center bg-cover flex-shrink-0 animate-zoom">
 
             <!-- hero description -->
             <div class="mx-4 mt-6 lg:mt-16 space-y-4 lg:ml-20 ">
@@ -106,9 +121,9 @@
                     class="px-4 py-1  bg-[#FFDC26] text-black hover:bg-black hover:text-white font-medium rounded-md  transition-transform duration-300 hover:scale-105">Find
                     a pet</button>
             </div>
-            <!-- hero background image -->
+            <!-- hero background for image for mobile -->
             <div
-                class=" bg-[url('./assets/cat-big.png')]  w-[380px] h-[230px] lg:w-[1320px] lg:h-[600px] bg-center bg-cover  flex-shrink-0 ">
+                class="bg-[url('./assets/cat-big.png')]  max-w-[380px] h-[230px] lg:w-[1320px] lg:h-[600px] bg-center bg-cover flex-shrink-0 lg:hidden animate-zoom ">
 
             </div>
 
@@ -116,7 +131,7 @@
     </header>
     <main>
         <!-- categories section -->
-        <section class="mx-4 lg:mx-10 mt-8 lg:mt-20">
+        <section class="mx-4 lg:mx-10 mt-80 lg:mt-20">
             <div>
                 <h3 class="text-2xl lg:text-3xl fonts-big">Browse By Categories</h3>
             </div>
