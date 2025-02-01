@@ -39,6 +39,20 @@
     .animate-zoom {
         animation: zoom 5s ease-in-out infinite alternate;
     }
+
+    @keyframes slide {
+        from {
+            background-position: left;
+        }
+
+        to {
+            background-position: right;
+        }
+    }
+
+    .animate-slide {
+        animation: slide 5s linear infinite alternate;
+    }
 </style>
 
 <body class="bg-white text-black ">
@@ -99,13 +113,14 @@
                     </div>
                 </div>
             </div>
+            <hr class=" lg:hidden h-1 bg-slate-300">
         </nav>
         <!-- hero section -->
         <section
             class="lg:bg-[url('./assets/cat-big.png')]  w-[380px] h-[230px] lg:w-[1320px] lg:h-[600px] bg-center bg-cover flex-shrink-0 animate-zoom">
 
             <!-- hero description -->
-            <div class="mx-4 mt-6 lg:mt-16 space-y-4 lg:ml-20 ">
+            <div class="mx-4 mt-6 lg:mt-16 space-y-4 lg:ml-20  ">
                 <h1 class="text-2xl lg:text-5xl fonts-big ">Pamper Your Pet,
                     <br>Because They Deserve
                     <br>the Bes
@@ -123,7 +138,7 @@
             </div>
             <!-- hero background for image for mobile -->
             <div
-                class="bg-[url('./assets/cat-big.png')]  max-w-[380px] h-[230px] lg:w-[1320px] lg:h-[600px] bg-center bg-cover flex-shrink-0 lg:hidden animate-zoom ">
+                class="bg-[url('./assets/cat-big.png')]  max-w-[380px] h-[230px] lg:w-[1320px] lg:h-[600px] bg-center bg-cover flex-shrink-0 overflow-hidden lg:hidden animate-slide ">
 
             </div>
 
@@ -311,6 +326,62 @@
                 </div>
             </div>
         </section>
+        <!-- Customer Reviews Section -->
+        <section class=" mt-10 lg:mt-32 bg-[#FFF9F4] py-12">
+            <div class=" mx-4 lg:mx-10 max-w-6xl text-center lg:pl-20">
+                <h2 class="text-2xl lg:text-3xl font-bold fonts-big">What Our Customers Say</h2>
+                <p class="fonts-sora mt-2">See what pet lovers are saying about our products!</p>
+
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-lg fonts-big">"Great products! My cat loves them!"<h3>
+                                <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center mx-auto">
+                                    <img src="assets/cat-owner1.png" alt="">
+                                </div>
+                                <div class="flex items-center justify-center mt-4">
+                                    <span class="text-yellow-500 text-lg"><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                                </div>
+                                <p class="fonts-sora mt-2">- Ahmed, Cat Owner</p>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-lg fonts-big">The best pet store I've found! Highly recommended. </h3>
+                        <div class="w-20 h-20 bg-white rounded-full flex justify-center items-center mx-auto">
+                            <img src="assets/cat-owner2.png" alt="">
+                        </div>
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-yellow-500 text-lg"><span class="text-yellow-500 text-lg"><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></span>
+                        </div>
+                        <p class="fonts-sora mt-2">- Andrew, Cat lover</p>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
+                        <h3 class="text-lg fonts-big">Fast delivery & top-quality
+                            <br> items!
+                        </h3>
+                        <div class="w-20 mt-3 h-20 bg-white rounded-full flex justify-center items-center mx-auto">
+                            <img src="assets/cat-owner3.png" alt="">
+                        </div>
+                        <div class="flex items-center justify-center mt-4">
+                            <span class="text-yellow-500 text-xl"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i></span>
+                        </div>
+                        <p class="fonts-sora mt-2">- luff, Rabbit Owner</p>
+                    </div>
+
+                </div>
+                <div class="flex justify-center text-center mt-8">
+                    <button
+                        class="px-4 py-1 bg-[#FFDC26] text-black  font-semibold rounded-md  transition-transform duration-300 hover:scale-105">View
+                        More Reviews</button>
+                </div>
+        </section>
         <!-- low price section -->
         <section class="mt-10 mx-4 lg:mx-10 lg:mt-20  lg:pb-48">
             <h4 class="text-2xl lg:text-3xl fonts-big">Everyday low Price</h4>
@@ -358,7 +429,7 @@
                     <h4 class="text-xl lg:text-3xl fonts-big">Get Pawsome News!</h4>
                     <p class="fonts-sora">Exclusive training tips, ticks, product deals and more.</p>
                     <input type="text" placeholder="Enter email...."
-                        class="input input-bordered bg-white border-none w-full max-w-sm   transition-transform duration-300 hover:scale-105" />
+                        class="input input-bordered bg-white border-none  w-full lg:max-w-sm transition-transform duration-300 hover:scale-105" />
                     <button
                         class="px-4 py-1 bg-[#FFDC26] text-black rounded-md fonts-big  transition-transform duration-300 hover:scale-105">Subscribe</button>
                 </div>
